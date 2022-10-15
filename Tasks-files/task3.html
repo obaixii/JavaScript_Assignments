@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Task#3</title>
+</head>
+<body>
+    <h2>Task #3</h2>
+    <p>3.Name Cases: Store a person’s name in a variable, and then print that person’s name in lowercase, uppercase, and title case.</p>
+    <h4 id="userName">obaid ur rehman</h4>
+    <p id="uppercase">uppercase</p>
+    <p id="lowercase">lowercase</p>
+    <p id="capitalize">capitalize</p>
+
+    <script>
+        let userName = document.getElementById("userName")
+
+        let userName2 = document.getElementById("uppercase")
+        userName2.innerText = userName2.innerText +": "+ userName.innerText
+        userName2.style.textTransform="uppercase"
+
+        let userName3 = document.getElementById("lowercase")
+        userName3.innerText = userName3.innerText +": "+ userName.innerText
+        userName3.style.textTransform="lowercase"
+
+        let userName4 = document.getElementById("capitalize")
+        userName4.innerText = userName4.innerText +": "+ userName.innerText
+        userName4.style.textTransform="capitalize"
+
+
+
+    </script>
+</body>
+</html>

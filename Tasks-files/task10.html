@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task#10</title>
+</head>
+
+<body>
+    <h2>Task#10</h2>
+    <p>11. Names: Store the names of a few of your friends in a array called names. Print each person’s name by
+        accessing each element in the list, one at a time.</p>
+    <!-- <p id="text"></p> -->
+    <script>
+        let fname = ["obaid", "eitisham", "zeeshan", "bilal", "ahmed"];
+        // in console
+        // console.log(fname[0])
+        // console.log(fname[1])
+        // console.log(fname[2])
+        // console.log(fname[3])
+        // console.log(fname[4])
+
+        // in console through loop
+
+        for(let i=0; i < fname.length; i++){
+            console.log(fname[i])
+        }
+        // let text = document.getElementById("text")
+        fname.map((val) => {
+            document.write(val + "<br>")
+        })
+
+    </script>
+</body>
+
+</html>

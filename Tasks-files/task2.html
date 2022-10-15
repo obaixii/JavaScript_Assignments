@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task #2</title>
+  </head>
+  <body>
+    <h5>
+      <em>Task#1 was about installing Vs code and Node.js on your device</em>
+    </h5>
+    <hr />
+    <h3>Task #2</h3>
+    <h5>
+      Store a person name in a variable, and print a message to that person.
+      Your message should be simple, such as, “Hello Eric, would you like to
+      learn some Python today?”
+    </h5>
+
+    <h2>Output Input Values Example:</h2>
+    <input type="text" name="name" id="fName" placeholder="Enter your name" />
+    <input type="button" value="Save" id="save" />
+    <h2>Output (HardCode Example):</h2>
+    <p id="defMsg"></p>
+
+    <script>
+      // INPUT VALUE EXAMPKE
+      let fName = document.getElementById("fName");
+      let defMsg = document.getElementById("defMsg");
+      let save = document.getElementById("save");
+
+      save.addEventListener("click", saveName);
+
+      function saveName() {
+        let fName = document.getElementById("fName").value;
+        let defMsg = document.getElementById("defMsg");
+        userName = fName;
+        msg = " Welcome to Supertech ";
+        defMsg.innerText = "Hi " + userName + "," + msg;
+      }
+      // HARDCODE EXAMPLE
+      let userName = "Eric";
+      document.write(" Hello " + userName + ", would you like to learn some JavaScript today? " +"<br>");     
+
+    </script>
+  </body>
+</html>

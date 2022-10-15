@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task#14</title>
+  </head>
+
+  <body>
+    <h2>Task#14</h2>
+    <p>
+      15. Changing Guest List: You just heard that one of your guests can’t make
+      the dinner, so you need to send out a new set of invitations. You’ll have
+      to think of someone else to invite.
+    </p>
+
+    <script>
+      // Adding Guest list
+      let guest = ["Obaid", "Sham", "Zeeshan", "Ahmed", "Ibrahim"];
+      // Adding invitation msg
+      let invMsg =
+        ", I’m having a barbecue to celebrate moving in to my new place and I’d love it if you could come.";
+
+      // printing msg for each guest through For Loop
+      for (let i = 0; i < guest.length; i++) {
+        console.log(guest[i] + invMsg);
+      }
+      // printing msg for each guest through Map function
+      guest.map((guest) => {
+        document.write(guest + invMsg + "<br>");
+      });
+
+      // Adding new Guest Name through new variables
+      let guestNot =
+        "<hr>" + guest[0] + ", Cannot make it to dinner" + "<br>" + "<hr>";
+      let newGuest = ["Osman", "Sham", "Zeeshan", "Ahmed", "Ibrahim"];
+
+      // printing msg for guest guests can’t come
+      document.write(guestNot);
+      // printing new msg for each guest through For Loop
+      for (let i = 0; i < newGuest.length; i++) {
+        document.write(newGuest[i] + invMsg + "<br>");
+      }
+
+      // Add/Remove array element with splice method
+      /*   Removing Array[0], with splice method (0,1)
+      first index is for Array index postion, other is for number of new elements
+       */
+      // arrayname.splice(0, 1); // Removes an element
+      // arrayname.splice(0, 0, "Ali"); // Adds an element
+    </script>
+  </body>
+</html>

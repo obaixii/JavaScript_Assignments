@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Task#7</title>
+</head>
+
+<body>
+    <div id="content">
+        <h2>Task#7</h2>
+        <p>7. Number Eight: Write addition, subtraction, multiplication, and division operations that each result in the
+            number 8. Be sure to enclose your operations in print statements to see the results.</p>
+        <p>8. You should create four lines that look like this:<br>console.log(5 + 3)
+        </p>
+    </div>
+    <script>
+        // Addition
+        let add1 = 5
+        let add2 = 3
+        let asum = add1 + add2
+        console.log(asum)
+
+        // adding new element
+        let para1 = document.createElement("p")
+        let node = document.createTextNode("console.log(" + add1 + "+" + add2 + ") = " + asum)
+        para1.appendChild(node)
+        let content = document.getElementById("content")
+        content.appendChild(para1)
+
+        // Subtraction
+        let sub1 = 12
+        let sub2 = 4
+        let ssum = sub1 - sub2
+        console.log(ssum)
+
+        // adding new element
+        let para2 = document.createElement("p")
+        let node2 = document.createTextNode("console.log(" + sub1 + "-" + sub2 + ") = " + ssum)
+        para2.appendChild(node2)
+        let content2 = document.getElementById("content")
+        content.appendChild(para2)
+
+        // Multiplication
+        let mul1 = 2
+        let mul2 = 4
+        let msum = mul1*mul2
+        console.log(msum)
+
+        // adding new element
+        let para3 = document.createElement("p")
+        let node3 = document.createTextNode("console.log(" + mul1 + "*" + mul2 + ") = " + msum)
+        para3.appendChild(node3)
+        let content3 = document.getElementById("content")
+        content.appendChild(para3)
+
+        // Division
+        let div1 = 16
+        let div2 = 2
+        let dsum = div1 / div2
+        console.log(dsum)
+
+        // adding new element
+        let para4 = document.createElement("p")
+        let node4 = document.createTextNode("console.log(" + div1 + "/" + div2 + ") = " + dsum)
+        para4.appendChild(node4)
+        let content4 = document.getElementById("content")
+        content.appendChild(para4)
+    </script>
+</body>
+
+</html>

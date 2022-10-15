@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Task#12</title>
+</head>
+<body>
+    <h2>Task#12</h2>
+    <p>13.	Your Own Array: Think of your favorite mode of transportation, such as a motorcycle or a car, and make a list that stores several examples. Use your list to print a series of statements about these items, such as “I would like to own a Honda motorcycle.”</p>
+
+    <script>
+        let cars = ["Audi", "BMW", "Nissan", "Ford", "Tesla", "Royal Royce"]
+        // for Loop
+        for(let i = 0; i<cars.length; i++){
+            document.write("I would like to own a " + cars[i] + "<br>" + "<br>")
+        }
+
+        // Map()
+        cars.map((car)=>{
+            document.write("<br>" +"I would like to own a " + car)
+        })
+    </script>
+</body>
+</html>
