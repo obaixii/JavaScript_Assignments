@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task#17</title>
+</head>
+<body>
+    <h2>Task#17</h2>
+    <p>18.	Seeing the World: Think of at least five places in the world you’d like to visit.</p>
+    <ul>
+    <li>Store the locations in a array. Make sure the array is not in alphabetical order.</li>
+    <li>Print your array in its original order.</li>
+    <li>Print your array in alphabetical order without modifying the actual list.</li>
+    <li>Print your array in reverse alphabetical order without changing the order of the original list.</li>
+    <li>Show that your array is still in its original order by printing it again.</li>
+    </ul>
+
+    <script>
+        let favPlaces = ["London","Istanbol","Rawalpindi","Berlin","Dubai","Baghdad"]
+
+        document.write( "List of Fav Places: " + favPlaces + "<br>" + "<hr>")
+        let original = "Orginal order: " + favPlaces + "<br>" + "<br>";
+        let alphaOrder = "Alphabetical order: " + favPlaces.sort() + "<br>" + "<br>" ;
+        let unOrder = "Reverse order: " + favPlaces.reverse() + "<br>" + "<br>";
+        
+
+        document.write(alphaOrder,unOrder,original)
+
+        // sort() sorts the order of an arrays  e.g A-Z, 1-10
+        // reverse() Rerverses the order of elements in an arrays e.g Z-A, 10-1
+
+    </script>
+</body>
+</html>
