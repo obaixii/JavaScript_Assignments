@@ -11,16 +11,49 @@
     <p>
       16. More Guests: You just found a bigger dinner table, so now more space
       is available. Think of three more guests to invite to dinner.
+      <em>Continuing Code from Task#15</em>
     </p>
 
     <script>
       let guest = ["Obaid", "Sham", "Zeeshan", "Ahmed", "Ibrahim"];
+      // Adding invitation msg
       let invMsg =
-        " I’m having a barbecue to celebrate moving in to my new place and I’d love it if you could come.";
+        ", I’m having a barbecue to celebrate moving in to my new place and I’d love it if you could come.";
 
+      // printing msg for each guest through For Loop
       for (let i = 0; i < guest.length; i++) {
-        document.write(guest[i] + invMsg + "<br>");
+        console.log(guest[i] + invMsg);
       }
+      // printing msg for each guest through Map function
+      guest.map((guest) => {
+        document.write(guest + invMsg + "<br>");
+      });
+
+      // Adding new Guest Name through new variables
+      let newGuest = ["Osman", "Sham", "Zeeshan", "Ahmed", "Ibrahim"];
+
+      let guestNot ="<hr>" + guest[0] + ", Cannot make it to dinner" + "<br>" + "<hr>";
+
+      // printing msg for guest guests can’t come
+      document.write(guestNot);
+      // printing new msg for each guest through For Loop
+      for (let i = 0; i < newGuest.length; i++) {
+        document.write(newGuest[i] + invMsg + "<br>");
+      }
+
+      // Adding three more guests
+      document.write("<hr>" + "Three New Guest added, Guest List updated" + "<hr>")
+      newGuest.push("Shaheen","Rauf","Babar")
+      for (let i = 0; i < newGuest.length; i++) {
+        document.write(newGuest[i] + invMsg + "<br>");
+      }
+      // Push() will add new elements in en of an array 
+      // unshift() will add new elements in start of an array
+      /*
+      Complete reference of arrays methods
+      https://www.w3schools.com/jsref/jsref_obj_array.asp
+      */
+
     </script>
   </body>
 </html>
