@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=100, initial-scale=1.0">
+    <title>Task#23</title>
+</head>
+<body>
+    <h2>Task#23</h2>
+    <p>24.	More Conditional Tests: You don’t have to limit the number of tests you create to 10. If you want to try more comparisons, write more tests. Have at least one True and one False result for each of the following:
+    <ul>
+        <li>Tests for equality and inequality with strings</li>
+        <li>Tests using the lower case function</li>
+        <li>Numerical tests involving equality and inequality, greater than and less than, greater than or equal to, and less than or equal to</li>
+        <li>Tests using "and" and "or" operators</li>
+        <li>Test whether an item is in a array</li>
+        <li>Test whether an item is not in a array</li>
+    </ul>
+    </p>
+
+    <hr>
+    <script>
+        // Number Example
+        let num = "7";
+        /*
+         = assigns a value,
+         == checks if value is equal - datatype is ignored
+         === checks if value and datatype are equal 
+         */
+        if(num==="7"){
+            console.log(num==="7")
+            console.log(num===7)
+            console.log("The value is 7 but data type is different\n'7' is string whereas 7 is number,data type is different.\nHence one statement is True and other is False" )
+        }else{
+
+        }
+
+        // UpperCase Example
+        let word1 = "STICS"
+        if(word1==word1.toLowerCase()){
+            console.log("the Variable 'word1' is in lowerCase")
+        }else{
+            console.log("The Variable 'word1' is in upperCase")
+        }
+        console.log(word1)
+        // lowerCase Example
+        let word2 = "stics"
+        if(word2==word2.toLowerCase()){
+            console.log("the Variable 'word2' is in lowerCase")
+        }else{
+            console.log("The Variable 'word2' is in upperCase")
+        }
+        console.log(word2)
+
+        // Numerical Test
+        let num1 = 5
+        let num2 = 3
+
+        if(num1,num2){
+            console.log(num1>num2)
+        }else{
+            console.log(num1<num2)
+        }
+        console.log("num1 is 5, and num2 is 3, if num1 is greater than num2, the result will be 'TRUE', if not the the result will be 'FALSE'")
+
+        /* Logic Operators -
+        1.AND(&&) 2.OR(||) 3.NOT(!) */
+
+        // Conditions using AND(&&) and OR(||) NOT (!)
+        let name1 = "obaid" ;
+        age1 = 21
+        let name2 = "Rehman"
+        age2 = 15
+
+        // And Operator
+        if(name1=="obaid" && age1==21){
+            console.log("User Name is " + name1 +" He is "+ age1 + " years old")
+        }else{
+            console.log("Not eligble for website")
+        }
+        if(name2=="Rehman" && age2==15){
+            console.log("User Name is " + name1 +" He is "+ age1 + " years old")
+        }else{
+            console.log("Not eligble for website")
+        }
+
+        // Or Operator
+        if(name1=="Obaid" || name2=="Rehman"){
+            console.log("Name is Valid")
+        }else{
+            console.log("Invalid Name")
+        }
+        if(age1==21 || age2==15){
+            console.log("Age is Valid")
+        }else{
+            console.log("Invalid Age")
+        }
+
+        let arr = ["Obaid","Sham","Zeeshan","Bilal",]
+        // testing if an item is in an Array
+        console.log(arr.includes("Obaid"))
+        // testing if an item is not in an Array
+        console.log(arr.includes("Mudassir"))
+    </script>
+</body>
+</html>
