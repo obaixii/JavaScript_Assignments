@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task#26</title>
+</head>
+<body>
+    <h2>Task#26</h2>
+    <p>27.	Alien Colors #3: Turn your if-else chain from Exercise 5-4 into an if-else chain.</p>
+    <li>If the alien is green, print a message that the player earned 5 points.</li>
+    <li>If the alien is yellow, print a message that the player earned 10 points.</li>
+    <li>If the alien is red, print a message that the player earned 15 points.</li>
+    <li>Write three versions of this program, making sure each message is printed for the appropriate color alien.</li>
+    <hr>
+    <label for="">Choose a Color for your Alien  - <br><b>User Define input Example</b><br>
+    </label>
+    <input type="text" id="colorSelected">
+    <input type="button" id="colorSubmit" value="Submit">
+    <p id="output"></p>
+    <br>
+
+
+    <script>
+        let alienColor1 = "Green";
+        let alienColor2 = "Red";
+        let alienColor3 = "Yellow";
+
+        let colorSubmit = document.getElementById("colorSubmit")
+        let colorSelected = document.getElementById("colorSelected")
+        let output = document.getElementById("output")
+        colorSubmit.addEventListener("click",()=>{
+            // console.log()
+            if(colorSelected.value=="Green" || colorSelected.value=="green"){
+                output.innerText = "Congratulations,your Alien color is "+ colorSelected.value+"You have just earned 5 Points"
+            } else if(colorSelected.value=="Red" || colorSelected.value=="red") {
+                output.innerText = "Congratulations,your Alien color is "+ colorSelected.value+"You have just earned 10 Points"
+            }else if(colorSelected.value=="Yellow" || colorSelected.value=="yellow"){
+                output.innerText = "Congratulations,your Alien color is "+ colorSelected.value+"You have just earned 15 Points"
+            }else{
+                output.innerText=("No Bonus Points earned")
+            }
+        })
+        
+        document.write("Congratulations,your Alien color is Green, You have just earned 5 Points."+"<br>")
+        document.write("Congratulations,your Alien color is Red, You have just earned 10 Points." +"<br>")
+        document.write("Congratulations,your Alien color is Yellow, You have just earned 15 Points." +"<br>")
+        </script>
+</body>
+</html>
