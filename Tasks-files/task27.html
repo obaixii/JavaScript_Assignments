@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task#27</title>
+  </head>
+  <body>
+    <h2>Task#28</h2>
+    <p>
+      28. Stages of Life: Write an if-else chain that determines a person’s
+      stage of life. Set a value for the variable age, and then:
+    </p>
+    <ul>
+      <li>
+        If the person is less than 2 years old, print a message that the person
+        is a baby.
+      </li>
+      <li>
+        If the person is at least 2 years old but less than 4, print a message
+        that the person is a toddler.
+      </li>
+      <li>
+        If the person is at least 4 years old but less than 13, print a message
+        that the person is a kid.
+      </li>
+      <li>
+        If the person is at least 13 years old but less than 20, print a message
+        that the person is a teenager.
+      </li>
+      <li>
+        If the person is at least 20 years old but less than 65, print a message
+        that the person is an adult.
+      </li>
+      <li>
+        If the person is age 65 or older, print a message that the person is an
+        elder.
+      </li>
+      <hr />
+      <input id="personAge" type="number" placeholder="Enter Your Age" />
+      <input id="submitAge" type="button" value="Submit your Age" />
+      <p><strong>Your Result will be shown below</strong></p>
+      <p id="output"><em>Enter Age, Hit submit, Get Result</em></p>
+
+      <script>
+
+        let personAge = document.getElementById("personAge");
+        let submitAge = document.getElementById("submitAge");
+        let output = document.getElementById("output");
+
+        submitAge.addEventListener("click", () => {
+          if(personAge.value < 2){
+            output.innerText = "The person is baby"
+          }else if(personAge.value <4){
+            output.innerText = "The person is toddler"
+          }else if(personAge.value <13){
+            output.innerText = "The person is kid"
+          }else if(personAge.value <20){
+            output.innerText = "The person is teenager"
+          }else if(personAge.value <65){
+            output.innerText = "The person is adult"
+          }else{
+            output.innerText = "The person is an elder"
+          }
+        });
+      </script>
+    </ul>
+  </body>
+</html>
